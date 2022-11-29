@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 1px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.logo{
+    width: 120px;
+    padding-left: 5%;
+    cursor: pointer;
+    color: #41729F;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #D8D7D5;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.sepatu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+.card{
+    width: 270px;
+    height: 330px;
+    display: inline-block;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    border: 2px solid #4E545C;
+}
+.card1{
+    background-image: url(../img/jordan1.jpg);
+}
+.card2{
+    background-image: url(../img/jordan2.jpg);
+}
+.card3{
+    background-image: url(../img/jordan3.jpg);
+}
+.sepatu h1{
+    color: #E5E8E8;
+}
+.sepatu .judul{
+    color: #E5E8E8;
+    background: #4E545C;
+    width: 500px;
+    margin-left: 240px;
+}
+.card h3{
+    color: #E5E8E8;
+    font-size: 30px;
+}
+.card p{
+    color: #E5E8E8;
+    margin-top: 200px;
+    background: #4E545C;
+}
+.card:hover{
+    color: #E5E8E8;
+}
